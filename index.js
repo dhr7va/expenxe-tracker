@@ -31,7 +31,7 @@ function displayExpenses() {
     expenses.forEach((expense, index) => {
         const li = document.createElement('li');
         li.className = 'list-group-item';
-        li.innerHTML = `${expense.description} - $${expense.amount} <span class="badge badge-secondary">${expense.category}</span>
+        li.innerHTML = `${expense.description} - Rs${expense.amount} <span class="badge badge-secondary">${expense.category}</span>
         <button class="btn btn-sm btn-warning float-right ml-2" onclick="editExpense(${index})">Edit</button>
         <button class="btn btn-sm btn-danger float-right" onclick="deleteExpense(${index})">Delete</button>`;
         expenseList.appendChild(li);
